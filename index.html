@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex">
 <title>Bokok — dim sum di Hong Kong in una biblioteca · Milano Sarpi</title>
 <meta name="description" content="Bokok, la stanza dei tesori (珍宝阁): dim sum fatto a mano di Hong Kong in una biblioteca, in Via Paolo Sarpi 25, a Milano. Ravioli al vapore, bao, noodles, ramen, anatra arrosto e i grandi classici cantonesi, tra pareti di libri. Cha chaan teng in Chinatown." />
 <link rel="canonical" href="https://rotenzark.github.io/bokok/" />
@@ -22,28 +23,62 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png" />
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=2" />
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org", "@type": "Restaurant",
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
   "name": "Bokok",
   "description": "Cha chaan teng — sala da tè in stile Hong Kong — nel cuore di Chinatown a Milano: dim sum fatto a mano, ravioli al vapore, bao, noodles, ramen, anatra arrosto e classici cantonesi, serviti in una sala-biblioteca con le pareti coperte di libri.",
   "url": "https://rotenzark.github.io/bokok/",
-  "telephone": "+39024942 7825", "priceRange": "€€",
-  "servesCuisine": ["Cantonese", "Hong Kong", "Cinese", "Dim sum"],
+  "telephone": "+39024942 7825",
+  "priceRange": "€€",
+  "servesCuisine": [
+    "Cantonese",
+    "Hong Kong",
+    "Cinese",
+    "Dim sum"
+  ],
   "image": "https://rotenzark.github.io/bokok/img/biblioteca.jpg",
-  "address": { "@type": "PostalAddress", "streetAddress": "Via Paolo Sarpi 25", "addressLocality": "Milano", "postalCode": "20154", "addressCountry": "IT" },
-  "geo": { "@type": "GeoCoordinates", "latitude": 45.4813545, "longitude": 9.1761329 },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.2", "reviewCount": "1537" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Paolo Sarpi 25",
+    "addressLocality": "Milano",
+    "postalCode": "20154",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4813545,
+    "longitude": 9.1761329
+  },
   "foundingDate": "2019",
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "11:30", "closes": "23:30" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:30", "closes": "22:00" }
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "11:30",
+      "closes": "23:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "11:30",
+      "closes": "22:00"
+    }
   ],
-  "sameAs": ["https://www.instagram.com/bokok.sarpi/", "https://www.facebook.com/bokok.sarpi/"]
+  "sameAs": [
+    "https://www.instagram.com/bokok.sarpi/",
+    "https://www.facebook.com/bokok.sarpi/"
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -64,7 +99,7 @@
   <div class="intro-mark">
     <span class="spines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
     <span class="intro-name">Bokok</span>
-    <span class="intro-sub">珍宝阁 · la stanza dei tesori</span>
+    <span lang="it" class="intro-sub">珍宝阁 · la stanza dei tesori</span>
   </div>
   <button id="intro-skip" data-i18n="intro.skip">Entra →</button>
 </div>
@@ -83,7 +118,7 @@
   <div class="head-actions">
     <div class="lang" role="group" aria-label="Lingua"><button data-lang="it" class="active">IT</button><span>·</span><button data-lang="en">EN</button></div>
     <a class="btn-book" href="tel:+390249427825"><span data-i18n="cta.book">Prenota</span></a>
-    <button id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <button id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span lang="it"></span></button>
   </div>
 </header>
 
@@ -220,11 +255,11 @@
 <section id="recensioni" class="section recensioni">
   <div class="rev-head reveal"><p class="kicker" data-i18n="rev.kicker">Le voci</p><h2 data-i18n="rev.h2">«Curato in ogni dettaglio»</h2></div>
   <div class="rev-grid">
-    <blockquote class="rev reveal"><p>L'esperienza complessiva è stata molto positiva. La location è esclusiva e curata nei dettagli, con un ambiente elegante e diverso da tutti gli altri.</p><cite>Maria Giovanna Milieni · <span>★★★★★</span></cite></blockquote>
+    <blockquote class="rev reveal"><p lang="it">L'esperienza complessiva è stata molto positiva. La location è esclusiva e curata nei dettagli, con un ambiente elegante e diverso da tutti gli altri.</p><cite>Maria Giovanna Milieni · <span>★★★★★</span></cite></blockquote>
     <blockquote class="rev reveal reveal-d1"><p>So yummy — I loved the cetrioli agropiccante and everything we got was amazing. Very tasty, flavourful food, and the restaurant has a lot of fun decor. Would definitely come back!</p><cite>Daniela Macedo · <span>★★★★★</span></cite></blockquote>
-    <blockquote class="rev reveal reveal-d2"><p>Abbiamo trovato eccezionali i bao classici, il pollo fritto piccante e l'anatra. Un locale che vale la sosta.</p><cite data-i18n="rev.g1">Recensione Google · <span>★★★★★</span></cite></blockquote>
-    <blockquote class="rev reveal"><p>Apprezzato il riso con cotoletta e i ravioli ripieni di brodo… SUPER!</p><cite data-i18n="rev.g2">Recensione Google · <span>★★★★★</span></cite></blockquote>
-    <blockquote class="rev reveal reveal-d1"><p>Locale di cibo fusion molto buono, in piena zona Sarpi. E l'idea della biblioteca è splendida.</p><cite data-i18n="rev.g3">Recensione Google · <span>★★★★★</span></cite></blockquote>
+    <blockquote class="rev reveal reveal-d2"><p lang="it">Abbiamo trovato eccezionali i bao classici, il pollo fritto piccante e l'anatra. Un locale che vale la sosta.</p><cite data-i18n="rev.g1">Recensione Google · <span>★★★★★</span></cite></blockquote>
+    <blockquote class="rev reveal"><p lang="it">Apprezzato il riso con cotoletta e i ravioli ripieni di brodo… SUPER!</p><cite data-i18n="rev.g2">Recensione Google · <span>★★★★★</span></cite></blockquote>
+    <blockquote class="rev reveal reveal-d1"><p lang="it">Locale di cibo fusion molto buono, in piena zona Sarpi. E l'idea della biblioteca è splendida.</p><cite data-i18n="rev.g3">Recensione Google · <span>★★★★★</span></cite></blockquote>
   </div>
 </section>
 
@@ -247,7 +282,7 @@
     </div>
     <div class="dove-side reveal">
       <figure class="dove-photo"><img src="img/ingresso.jpg" alt="L'ingresso di Bokok" width="900" height="1200" loading="lazy" /></figure>
-      <div class="dove-map"><iframe title="Mappa Bokok" src="https://www.google.com/maps?q=Bokok+Via+Paolo+Sarpi+25+Milano&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="dove-map"><div class="mappa-clic" data-mappa-clic style="--mappa-h: 320px"><template><iframe title="Mappa Bokok" src="https://www.google.com/maps?q=Bokok+Via+Paolo+Sarpi+25+Milano&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&destination=Bokok+Via+Paolo+Sarpi+25+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div></div>
     </div>
   </div>
 </section>
@@ -274,7 +309,7 @@
   </div>
   <div class="foot-bottom">
     <p data-i18n="foot.disclaimer">Sito dimostrativo. Contenuti e foto raccolti da fonti pubbliche (Google Maps); orari, piatti e informazioni sono indicativi, da confermare con il ristorante.</p>
-    <p class="foot-credit">Design <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a></p>
+    <p class="foot-credit">Design <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a></p>
   </div>
 </footer>
 
@@ -286,5 +321,6 @@
 
 <div id="lightbox" aria-hidden="true"><button id="lb-close" aria-label="Chiudi">✕</button><img id="lb-img" src="" alt="" /></div>
 <script src="js/main.js?v=1"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
